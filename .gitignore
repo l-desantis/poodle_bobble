@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.cache/
+.DS_Store
+*.log
+
+# Tool/editor configs
+.mcp.json
+.playwright-mcp/
+.agents/
+.claude/
+
+# Screenshots
+*.png

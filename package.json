@@ -1,0 +1,17 @@
+{
+  "name": "poodle-bobble",
+  "version": "1.0.0",
+  "description": "Poodle Bobble game built with Phaser 3",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "phaser": "^3.70.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
