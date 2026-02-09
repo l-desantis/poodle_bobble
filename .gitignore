@@ -10,5 +10,6 @@ dist/
 .agents/
 .claude/
 
-# Screenshots
+# Screenshots (but not game assets)
 *.png
+!public/assets/**/*.png
