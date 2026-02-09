@@ -59,7 +59,7 @@ export class BootScene extends Phaser.Scene {
     });
 
     // Load sprite images
-    this.load.image('bub', 'assets/images/poodle_bub.png');
+    this.load.image('bub', `${import.meta.env.BASE_URL}assets/images/poodle_bub.png`);
 
     // Generate all textures
     this.createBubbleTextures();
@@ -178,9 +178,11 @@ export class BootScene extends Phaser.Scene {
   }
 
   create() {
-    // Initialize sound manager and store on game for cross-scene access
+    // Initialize sound manager and store on game for cross-scene access.
+    // Pass pre-created AudioContext from SplashScene (created during user gesture
+    // so it's already 'running', not 'suspended').
     const soundManager = new SoundManager();
-    soundManager.init();
+    soundManager.init(this.game._audioCtx);
     this.game.soundManager = soundManager;
 
     this.scene.start('MenuScene');

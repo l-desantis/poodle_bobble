@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Poodle Bobble game built with Phaser 3",
   "main": "src/main.js",
+  "homepage": "https://l-desantis.github.io/poodle_bobble",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "phaser": "^3.70.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^5.0.0"
   }
 }
