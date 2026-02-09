@@ -10,6 +10,6 @@ dist/
 .agents/
 .claude/
 
-# Screenshots (but not game assets)
-*.png
-!public/assets/**/*.png
+# Screenshots from testing tools
+.playwright-mcp/*.png
+/tmp_*.png
